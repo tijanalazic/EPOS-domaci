@@ -1,0 +1,52 @@
+*{
+  margin:0;
+  padding:0;
+
+}
+.meni{
+  width:100%;
+  overflow:hidden;
+  height:100px;
+  line-height:100px;
+  background:#e0e0d1;
+  border-bottom: 3px solid grey;
+  
+}
+.logo{
+  width:100px;
+  float: left;
+}
+
+.blok{
+  width:90%;
+  margin: 0 auto;
+
+}
+.menu{
+  float: right;
+}
+.menu li{
+  float: left;
+  width: 120px;
+  height: 100px;
+  line-height: 100px;
+  text-align:center;
+}
+.menu li a{
+  color:#000;
+  font-family:'Times New Roman', Times, serif;
+  display: block;
+  text-decoration: none;
+}
+.menu li:hover{
+ background: #cce6ff;
+}
+.menu li a:hover{
+  color:#1a8cff;
+}
+.meni a.active{
+  background-color:#cce6ff;
+}
+.baner{
+  background-image: url(slike/1.jpg);
+}
