@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.nav .logo{
+    display: block;
+    max-height: fit-content;
+    max-width: 50vh;
+    margin: auto;
+    float: left;
+    width: -10%;
+    height: 10px;
+}
+
+.nav .logo img{
+    width: 80px;
+    height: 75px;
+}
+
+.nav{
+    height: 75px;
+    background-color: #1b1f23;
+    position: sticky;
+    top: 0;
+}
+
+.nav ul{
+    list-style-type: none;
+    float: right;
+}
+
+ul li{
+    float: left;
+    text-decoration: none;
+    text-decoration-style: none;
+    color: aqua;
+    margin: 25px 35px;
+    font-size: 16px;
+}
+
+ul li a:hover{
+    color: green;
+}
+
+.baner{
+    height: 60vh;
+    background-image: url(img);
+}
