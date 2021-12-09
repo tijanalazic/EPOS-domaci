@@ -1,7 +1,12 @@
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
+}
 
+body{
+  font-family: sans-serif;
+  width: 100%;
 }
 .meni{
   width:100%;
@@ -10,7 +15,6 @@
   line-height:100px;
   background:#e0e0d1;
   border-bottom: 3px solid grey;
-  
 }
 .logo{
   width:100px;
@@ -20,7 +24,6 @@
 .blok{
   width:90%;
   margin: 0 auto;
-
 }
 .menu{
   float: right;
@@ -48,5 +51,77 @@
   background-color:#cce6ff;
 }
 .baner{
-  background-image: url(slike/1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../slike/1.jpg);
+  margin: auto;
+  height: 600px;
+  width: 100%;
+  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: blue;
+    text-align: center;
+}
+
+.baner h1{
+  padding: 100px 0 40px 0;
+  font-size: 60px;
+  font-weight: 100;
+  font-family: Trattatello, fantasy;
+}
+
+.baner a{
+  display: block;
+  border: 3px solid white;
+  margin: 0 auto;
+  border-radius: 30px;
+  width: 100px;
+  text-decoration: none;
+}
+
+.baner a:hover{
+  background-color: white;
+}
+
+.info{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.info img{
+  /* width: 100%; */
+  max-width: 100%; 
+  height: auto;
+}
+
+.info .card{
+  float: left;
+  width: calc((100% - 300px) / 3);
+  height: 500px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.info .card:hover{
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #1a8cff;
+}
+
+.info .card h2{
+  width: 60%;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* @media screen and (min-width: 601px) {
+  div.info {
+    font-size: 80px;
+  }
+} */
+
+.info .card p{
+  text-align: center;
 }
