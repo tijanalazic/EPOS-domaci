@@ -134,3 +134,25 @@ body{
   padding:10px;
   /*text-align: center;*/
 }
+/*za dtranicu o nama*/
+
+.oNama{
+  background:url("../slike/cekaonica-2-2000x1333.jpg") no-repeat left;
+  background-size:55%;
+  height:100vh;
+  overflow:hidden;
+  background-color:#e0e0d1;
+  padding: 50px 0;
+}
+.kontejner{
+  width:60%;
+float:right;
+padding: 100px;
+background-color:beige;
+}
+.kontejner p{
+  font-style: italic;
+}
+.kontejner h4{
+  text-align:center;
+}
