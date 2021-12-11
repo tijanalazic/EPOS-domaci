@@ -1,4 +1,4 @@
-
+/* neko lupetanje za JS, ne radi lol 
   document.getElementById("submit").addEventListener("click", funkcija);
 
   function funkcija() {
@@ -9,5 +9,5 @@
   function funkcija2() {
     alert ("Forma se restartuje");
   }
-
+ */
  
