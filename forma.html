@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="forma" id="forma">
+    <h1>Prijavi se</h1>
+    <form id="prijava">
+    <input type="text" size="30" placeholder="Korisnicko ime"name="korisnickoIme"required >
+    <br> <br>
+   <!--  <label for="email"><b>Email</b></label>
+    <br> <br> -->
+    <input type="text" placeholder="Email" name="email" required>
+    <br> <br>
+    <input type="text" size="30" minlength="8" placeholder="Password"name="password"required >
+    <br> <br>
+    <label>Pol:</label>
+    <input type="radio" name="Pol" id="muski" value="muski">
+    <label for="muski">Muski</label>
+    <input type="radio" name="Pol" id="zenski" value="zenski" checked>
+    <label for="zenski">Zenski</label>
+    <br> <br>
+    <label>Mesto</label>
+    <select name="mesto">
+        <option value="Novi Sad"> Novi Sad</option>
+        <optgroup label="Beograd">
+        <option value="Vozdovac"> Voždovac</option>
+        <option value="Cukarica"> Čukarica</option>
+        <option value="Rakovica"> Rakovica</option>
+        <option value="Palilula"> Palilula</option>
+        <option value="Vracar"> Vračar</option>
+        <option value="Novi Beograd"> Novi Beograd</option>
+        <option value="Savski Venac"> Savski Venac</option>
+        <option value="Stari grad"> Stari grad</option>
+        <option value="Zemun"> Zemun</option>
+        <option value="Zvezdara"> Zvezdara</option>
+         </optgroup>
+         <option value="Nis"> Niš</option>
+         <option value="Valjevo" selected> Valjevo</option>
+         <option value="Kragujevac"> Kragujevac</option>
+    </select>
+<br> <br>
+<label>Godine</label>
+<select name="Godine">
+    <option value="ispod 18"> Ispod 18 </option>
+    <option value="18-25"selected> 18-25 </option>
+    <option value="26-40"> 26-40 </option>
+    <option value="41-60"> 41-60 </option>
+    <option value="preko 60"> preko 60 </option>
+</select>
+<br> <br>
+    <button id="submit" type="submit" >Registruj se</button>
+    <button id="reset"type="reset">Resetuj formu</button>
+  <!--   <input type="submit" value="Prijavi se"> -->
+   </form>
+   </div>
+   <br> <br>  <br> <br>
+   <script src="main.js"></script>
+</body>
+</html>
