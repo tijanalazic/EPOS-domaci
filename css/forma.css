@@ -23,7 +23,7 @@ body{
    top:50%;
    left:85%;
    transform: translate(-50%, -50%);
-   width:400px;
+   width:500px;
   background-image: linear-gradient(-225deg, #99e0e9 40%, #D7FFFE 60%);
    
    }  

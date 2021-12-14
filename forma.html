@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
     <link rel="stylesheet" href="css/forma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
     <div class="forma" id="forma">
     
     <form id="prijava">
-        <h1><b>Prijavi se</b></h1>
+        <h1><b>Registruj se</b></h1>
     <input type="text"  size="30" placeholder="Korisnicko ime"name="korisnickoIme"required >
     <br> <br>
    <!--  <label for="email"><b>Email</b></label>
@@ -29,7 +31,8 @@
     <label for="zenski">Zenski</label>
 
     <br> <br>
-   
+    <button onclick="potvrda()">Klikni me!</button>
+    <br> <br>
     <label>Mesto</label>
     <select name="mesto">
         <option value="Novi Sad"> Novi Sad</option>
@@ -63,10 +66,13 @@
 <br> <br>
     <button id="submit" type="submit" >Registruj se</button>
     <button id="reset"type="reset">Resetuj formu</button>
+    <button onclick="funkcija()">Info</button>
+    <p id="poruka"></p>
+
    </form>
    </div>
    <br> <br>  <br> <br>
-
+   
    <script src="js/forma.js"></script>
 
 </body>
