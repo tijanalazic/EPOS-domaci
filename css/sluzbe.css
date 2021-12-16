@@ -12,7 +12,7 @@ body{
 
 nav{
     background: #e0e0d1;;
-    height: 80px;
+    height: 100px;
     width: 100%;
 }
 
@@ -25,7 +25,7 @@ label.logo{
 }
 
 label.logo img{
-    height: 80px;
+    height: 100px;
 }
 
 nav ul{
@@ -36,7 +36,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 9px 5px;
 }
 
 nav ul li a{
