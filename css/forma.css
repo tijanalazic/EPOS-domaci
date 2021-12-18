@@ -1,58 +1,95 @@
+.container{
+  background-color: #a6a6a6;
+  display:flex;
+  justify-content: center;
+  height: 700px;
+  align-items: center;
+}
+.login-form{
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 7px;
+  width:500px;
 
-body{ 
-    
+}
+label{
+  flex-basis: 130px;
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+p{
+  font-size: 20px;
+}
+.login-form h1{
+  margin-top:5px;
+  color:#79a6d2;
+}
+.flex-input{
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+
+}
+.ostalo{
+  margin-bottom:  8px;
+}
+input[type="text"],
+[type="password"]{
+  padding:8px;
+  font-size: 18px;
+}
+
+input[type="button"]{
+  width:100%;
+  font-size: 20px;
+  padding: 9px;
+  background-color: #79a6d2;
+  color:white;
+  border:none;
+  margin:20px 0;
+  margin-bottom: 10px;
   
-    background-image: url("../slike/2.jpg");
-    
-  
-     background-position: center center;
-    background-attachment: fixed;
+}
 
-  background-repeat: no-repeat;
-  background-size: cover; 
-  
- 
+#reset:hover,#info:hover,#kliknime:hover{
+  cursor:pointer;
+  background-color:  #8cb3d9;
+}
+#info,#reset,#kliknime{
+  width:100%;
+  font-size:20px;
+  padding: 7px;
+  border:none;
+  color:white;
+  background-color: 	 #b3cce6;
+  margin-bottom: 10px;
+}
 
-    /* background-image: linear-gradient(315deg, #aee1f9 26%, #f6ebe6 74%); */
- 
+input[type="button"]:hover{
 
+  cursor:pointer;
+  background-color: #b3cce6;
+}
+.flex-container{
+  display:flex;
+
+}
+.flex-container div{
+  flex:1;
+}
+.flex-container a{
+  text-decoration: none;
+  color:blueviolet;
+}
+.flex-container a:hover{
+  text-decoration: underline;
+}
+
+@media all and (max-width:480px){
+  .flex-input{
+      flex-direction: column;
   }
-    /* background-size: 100px 80px;
-    background-repeat: no-repeat;
-    margin:0;
-    padding:0;
-  
-    overflow:hidden; */
-    form{
-        border: 3px solid rgb(123, 191, 233);
-    }
-    .forma{
-   position:absolute;
-   top:50%;
-   left:85%;
-   transform: translate(-50%, -50%);
-   width:500px;
-  background-image: linear-gradient(-225deg, #99e0e9 40%, #D7FFFE 60%);
-   
-   }  
-   .forma h1{
-       text-align: center;
-       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       color:rgb(123, 191, 233);
-   }
-.prijava.password{
-       color:tomato;
-   }
-  /*  @media(min-width: 576px){
-    .forma{
-      max-width: 540px;
-    }
+  label{
+      flex-basis:0;
   }
-  
-  @media(min-width: 768px){
-    .forma{
-      max-width: 720px
-    }
-  }
-   */
-  
+}

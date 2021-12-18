@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
     <link rel="stylesheet" href="css/forma.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-
-    <div class="forma" id="forma">
-    
-    <form id="prijava">
-        <h1><b>Registruj se</b></h1>
-    <input type="text"  size="30" minlength="5" placeholder="Korisnicko ime"name="korisnickoIme"required >
-    <br> <br>
-   <!--  <label for="email"><b>Email</b></label>
-    <br> <br> -->
-    <input type="text"  placeholder="Email" name="emailAdresa" required>
-<!-- <input type="email"  placeholder="Email" name="email" required value="default@example.com"> -->
-    <br> <br>
-    <input type="text" size="30" minlength="8" placeholder="Password"name="password"required >
-    <br> <br>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
    
+</head>
+<body class="container">
+   <form action="" class="login-form">
+<h1>Registruj se</h1>
+<div class="flex-input">
+<label for="">Username</label>
+<input type="text" size="30" minlength="5" placeholder="Username"name="korisnickoIme"required >
+</div>
+<div class="flex-input">
+    <label for="">Email</label>
+    <input type="text" size="30" placeholder="Email" name="emailAdresa" required>
+</div>
+
+<div class="flex-input">
+<label for="">Password</label>
+<input type="password" size="30" minlength="8" placeholder="Password"name="password"required >
+</div>
+<div>
+    <button onclick="potvrda()" id="kliknime">Klikni me!</button>
+</div>
+<div class="ostalo">
     <label>Pol:</label>
     <input type="radio" name="Pol" id="muski" value="muski">
-    <label for="muski">Muski</label>
+    <label for="muski">Muški</label>
     <input type="radio" name="Pol" id="zenski" value="zenski" checked>
-    <label for="zenski">Zenski</label>
-
-    <br> <br>
-    <button onclick="potvrda()">Klikni me!</button>
-    <br> <br>
+    <label for="zenski">Ženski</label>
+</div>
+<div class="ostalo"> 
     <label>Mesto</label>
     <select name="mesto">
         <option value="Novi Sad"> Novi Sad</option>
@@ -53,10 +55,9 @@
          <option value="Valjevo" selected> Valjevo</option>
          <option value="Kragujevac"> Kragujevac</option>
     </select>
-<br> <br>
-
-
-<label>Godine</label>
+</div>
+<div class="ostalo">
+    <label>Godine</label>
 <select name="Godine">
     <option value="ispod 18"> Ispod 18 </option>
     <option value="18-25"selected> 18-25 </option>
@@ -64,28 +65,34 @@
     <option value="41-60"> 41-60 </option>
     <option value="preko 60"> preko 60 </option>
 </select>
-<br>
-<p>Da li ste se ranije lečili kod nas?</p>
+<div class="ostalo">
+    <p>Da li ste se ranije lečili kod nas?</p>
+    <div> 
+            <label>
+              <input type="checkbox" class="radio" value="1" name="da" />Da</label>
+            <label>
+              <input type="checkbox" class="radio" value="1" name="da" />Ne</label>
+          
+          
+</div>
 
-<div>
-  <input type="checkbox" id="da" name="da"
-         checked>
-  <label for="da">Da</label>
 </div>
 <div>
-  <input type="checkbox" id="ne" name="ne">
-  <label for="ne">Ne</label>
+<!-- <button id="submit" type="submit" >Registruj se</button> -->
+<input type="button" id="submit" value="LOGIN">
 </div>
-<br> <br>
-    <button id="submit" type="submit" >Registruj se</button>
+<div class="flex-container">
+    <div style="text-align: right;">
+ 
     <button id="reset"type="reset">Resetuj formu</button>
-    <button onclick="funkcija()">Info</button>
+</div>
+</div>
+<div>
+    <button onclick="funkcija()" id="info">Info</button>
     <p id="poruka"></p>
+</div>
 
    </form>
-   </div>
-   <br> <br>  <br> <br>
-   <script src="js/forma.js"></script>
-
+   <script src="js/forma.js"></script>         
 </body>
 </html>
