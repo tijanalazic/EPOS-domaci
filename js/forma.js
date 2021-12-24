@@ -1,6 +1,8 @@
-$("#submit").click(function() {
-  alert("Uspešno ste se registrovali!");
+
+$('form').on('submit',function(){
+  alert('Uspešno ste se registrovali!');
 });
+
 $("#reset").click(function() {
   alert("Forma je uspešno resetovana");
 });
