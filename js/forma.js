@@ -1,3 +1,11 @@
+
+$('form').on('submit',function(){
+  alert('Uspešno ste se registrovali!');
+});
+
+$("#reset").click(function() {
+  alert("Forma je uspešno resetovana");
+});
 function funkcija() {
   let text;
   let osoba = prompt("Unesite Vaše ime:", "Ivana Petrović");
@@ -8,12 +16,7 @@ function funkcija() {
   }
   document.getElementById("poruka").innerHTML = text;
 }
-$("#submit").click(function() {
-  alert("Uspešno ste se registrovali!");
-});
-$("#reset").click(function() {
-  alert("Forma je uspešno resetovana");
-});
+
 function potvrda()  {
 
   var rezultat = confirm("Da li želite da nastavite?");
