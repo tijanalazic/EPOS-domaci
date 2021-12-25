@@ -182,7 +182,7 @@ a .active, a:hover{
 }
 
 .single-img{
- padding: 20px 40px 20px 40px;
+ padding: 20px 30px 20px 40px;
 }
 
 img:hover{
@@ -315,3 +315,4 @@ background-color:beige;
   #check:checked ~ ul{
       left: 0;
   }
+}
