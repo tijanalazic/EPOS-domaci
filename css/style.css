@@ -269,7 +269,7 @@ img:hover{
 .container .title h1::after{
   content: "";
   height: 6px;
-  width: 180px;
+  width: 160px;
   background-color: #222;
   box-shadow: 0 2px 4px rgb(143, 143, 137);
   border-radius: 6px;
