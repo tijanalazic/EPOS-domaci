@@ -339,7 +339,7 @@ img:hover{
 }
 
 @media (max-width: 952px){
-  label.logo img{
+  label.logo{
       font-size: 30px;
       padding-left: 80px;
   }
