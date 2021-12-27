@@ -69,16 +69,11 @@ a:hover {
   display: none;
 }
 
-.content {
-  background: #e0e0d1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/*za stranicu o nama*/
 
 .top {
   background-color: #7c7c77f6;
-  height: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,16 +82,30 @@ a:hover {
 .pageTitle {
   color: #e0e0d1;
   font-size: 70px;
+  text-shadow: 0 3px 5px rgb(27, 27, 27);
+}
+
+.content {
+  background: #e0e0d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mapContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2%;
+  gap: 10px;
   height: 700px;
   width: 100%;
   text-shadow: 0 1px 3px rgb(143, 143, 137);
+}
+
+.map{
+  border-width: 2px;
+  border-style: dotted;
+  box-shadow: 0px 0px 3px 0px rgba(10, 10, 10, 0.2);
 }
 
 .infoContainer {
@@ -106,9 +115,8 @@ a:hover {
   border-radius: 50px;
   display: grid;
   justify-content: center;
+  box-shadow: 0px 0px 3px 0px rgba(10, 10, 10, 0.2);
 }
-
-/* #b3e2e2 */
 
 .infoC {
   display: grid;
@@ -119,12 +127,26 @@ a:hover {
 }
 
 .info {
-  /* background-color: chartreuse; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  text-shadow: 0 1px 3px rgb(143, 143, 137);
+}
+
+.workingHoursContainer {
+  background-color: #bebeb9f6;
+  padding: 15px 30px;
+  border-radius: 20px;
+  display: block;
+  margin: 50px 0 50px 0;
+  box-shadow: 0px 0px 3px 0px rgba(10, 10, 10, 0.2);
+}
+
+.workingHours {
+  font-size: 1rem;
+  font-weight: 700;
   text-shadow: 0 1px 3px rgb(143, 143, 137);
 }
 
@@ -138,21 +160,11 @@ a:hover {
   width: 200px;
 }
 
-.workingHours {
-  font-size: 1rem;
-  font-weight: 700;
-  text-shadow: 0 1px 3px rgb(143, 143, 137);
-}
-
-.workingHoursContainer {
-  background-color: #bebeb9f6;
-  padding: 15px 30px;
-  border-radius: 20px;
-  display: block;
-  margin: 50px 0 50px 0;
-}
-
 @media (max-width: 600px) {
+  .infoContainer {
+    height: 450px;
+  }
+
   .infoC {
     height: 450px;
     display: grid;
@@ -160,8 +172,15 @@ a:hover {
     grid-template-columns: 1fr;
     align-items: center;
   }
-  .infoContainer {
-    height: 450px;
+
+  .mapContainer {
+    height: 400px;
+    gap: 0;
+  }
+
+  .mapD {
+    align-self: center;
+    padding-bottom: 20px;
   }
 
   .map {
@@ -169,11 +188,7 @@ a:hover {
     padding-bottom: 50%;
     position: relative;
     height: 0;
-  }
-
-  .mapD {
-    align-self: center;
-    padding-bottom: 20px;
+    border-width: 2px 0px 2px 0px;
   }
 
   .map iframe {
@@ -183,20 +198,11 @@ a:hover {
     width: 100%;
     position: absolute;
   }
-
-  .mapContainer {
-    height: 400px;
-  }
 }
 
 @media (min-width: 601px) {
   .mapContainer {
     align-items: center;
-  }
-
-  .map {
-    border-width: 2px;
-    border-style: dotted;
   }
 }
 
