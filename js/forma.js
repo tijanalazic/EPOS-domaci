@@ -85,3 +85,19 @@ function popupInfo(){
   `Password: ${password.value}\n` + `Pol: ${pol.value}\n` + `Mesto: ${mesto.value}\n` + `Godine: ${godine.value}\n` + 
   `Da li ste se ranije lečili kod nas: ${lecenje}\n`);
 }
+
+
+// $(".container").quietflow({
+//   theme: "bouncingBalls",
+//   specificColors:["rgba(255,0,0,0.5)","rgba(0,255,0,0.5)","rgba(0,0,255,0.5)"]
+// });
+
+
+$(".container").quietflow({
+  theme : "cornerSpikes",
+  backgroundCol : "#a6a6a6",
+  specificColors : [
+    "#3b76ec", 
+    "#525b7a"
+  ]
+})
