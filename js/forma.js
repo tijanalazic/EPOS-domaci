@@ -6,7 +6,7 @@ $('form').on('submit',function(){
 $("#reset").click(function() {
   alert("Forma je uspešno resetovana");
 });
-function funkcija() {
+/* function funkcija() {
   let text;
   let osoba = prompt("Unesite Vaše ime:", "Ivana Petrović");
   if (osoba == null || osoba == "") {
@@ -26,7 +26,16 @@ function potvrda()  {
   } else {
       alert("Doviđenja!");
   }
-}
+} */
+
+
+
+
+
+
+
+
+
 /* $("input:checkbox").on('click', function() {
   
   var $checkbox = $(this);
