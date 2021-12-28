@@ -10,7 +10,9 @@
    
 </head>
 <body class="container">
-   <form name="form" action="" class="login-form" >
+   
+  
+   <form name="form" method="post" action="" onsubmit="potvrda()" class="login-form" >
 <h1>Registruj se</h1>
 <div class="flex-input">
 <label for="">Username</label>
@@ -25,9 +27,9 @@
 <label for="">Password</label>
 <input type="password" size="30" minlength="8" placeholder="Password"name="password"required >
 </div>
-<!-- <div>
+ <!-- <div>
     <button onclick="potvrda()" id="kliknime">Klikni me!</button>
-</div> -->
+</div>  -->
 <div class="ostalo">
     <label>Pol:</label>
     <input type="radio" name="Pol" id="muski" value="muški">
@@ -83,8 +85,8 @@
 </div>
 <div class="flex-container">
     <div style="text-align: right;">
- 
-    <button id="reset"type="reset">Resetuj formu</button>
+        <input type="reset"id="reset">
+<!--     <button id="reset"type="reset">Resetuj formu</button> -->
 </div>
 </div>
 <!-- <div>
