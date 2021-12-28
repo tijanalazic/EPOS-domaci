@@ -4,9 +4,9 @@ $('form').on('submit',function(){
   popupInfo();
 });
 
-$("#reset").click(function() {
+/* $("#reset").click(function() {
   alert("Forma je uspešno resetovana");
-});
+}); */
 /* function funkcija() {
   let text;
   let osoba = prompt("Unesite Vaše ime:", "Ivana Petrović");
@@ -16,25 +16,25 @@ $("#reset").click(function() {
     text = "Zdravo " + osoba + "! U toku je mesec besplatnih preventivnih pregleda!";
   }
   document.getElementById("poruka").innerHTML = text;
-}
+}*/
 
-function potvrda()  {
+/*  function potvrda()  {
 
-  var rezultat = confirm("Da li želite da nastavite?");
+  var rezultat = confirm("Da li sigurno želite da se ulogujete?");
 
   if(rezultat)  {
-      alert("Nastavite sa popunjavanjem forme!");
-  } else {
-      alert("Doviđenja!");
+     /*  alert("Nastavite sa popunjavanjem forme!"); */
+/*   } else {
+    document.querySelector("form").reset();
   }
-} */
-
-
-
-
-
-
-
+}   */ 
+$(document).on('click', 'input[type="reset"]', function(e){
+  if(confirm("Da li sigurno želite da restartujete formu?")){alert("Forma je uspešno resetovana");}
+  else{
+   e.preventDefault();
+   window.location="#";
+  }
+});
 
 
 /* $("input:checkbox").on('click', function() {
