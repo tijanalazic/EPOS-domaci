@@ -341,7 +341,7 @@ img:hover{
 @media (max-width: 952px){
   label.logo{
       font-size: 30px;
-      padding-left: 50px;
+      padding-left: 80px;
   }
   nav ul li a{
       font-size: 16px;
