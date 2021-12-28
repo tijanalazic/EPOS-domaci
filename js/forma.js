@@ -29,7 +29,7 @@ $('form').on('submit',function(){
   }
 }   */ 
 $(document).on('click', 'input[type="reset"]', function(e){
-  if(confirm("Da li sigurno želite da restartujete formu?")){alert("Forma je uspešno resetovana");}
+  if(confirm("Da li sigurno želite da restartujete formu?")){alert("Forma će se resetovati!");}
   else{
    e.preventDefault();
    window.location="#";
