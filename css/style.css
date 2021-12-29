@@ -148,9 +148,9 @@ a .active, a:hover{
 img:hover{
  opacity: .5;
  transition: .9s;
- /* border: 2px solid black;
+ border: 2px solid black;
  border-radius: 5px;
- background-color: #cce6ff; */
+ background-color: #cce6ff;
 }
 
 /* @media screen and (max-width: 991px) {
@@ -206,6 +206,6 @@ img:hover{
     font-size: 11px;
   }
   .wrapper h2{
-    font-size: 15px;
+    font-size: 17px;
   }
 }
