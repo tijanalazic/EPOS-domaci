@@ -18,11 +18,7 @@ nav{
 }
 
 label.logo{
-    /* color: white;
-    font-size: 35px;
-    line-height: 80px; */
     padding: 0 80px;
-    /* font-weight: bold; */
 }
 
 label.logo img{
@@ -72,7 +68,7 @@ a .active, a:hover{
     text-align: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-}
+} 
 
 .baner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../slike/dz.jpg);
@@ -84,13 +80,6 @@ a .active, a:hover{
     background-attachment: fixed;
     /* color: rgb(42, 20, 168);
     text-align: center; */
-}
-
-.baner h3{
-    text-align: center;
-    justify-content: center;
-    font-size: 80px;
-    padding: 200px 0 0 0;
 }
 
 .wrapper{
@@ -142,6 +131,10 @@ img:hover{
     nav ul li a{
         font-size: 16px;
     }
+    .baner {
+        width: 100%;
+        background-position: center;
+      }
 }
 
 @media (max-width: 858px){
@@ -152,7 +145,6 @@ img:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        /* background: #2c3e50; */
         background: rgb(49, 47, 47);
         top: 80px;
         left: -100%;
@@ -175,329 +167,4 @@ img:hover{
     #check:checked ~ ul{
         left: 0;
     }
-
-/* .baner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../slike/decjilekar.jpg);
-    margin: auto;
-    height: 600px; 
-    width: 100%;
-
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-color: rgb(42, 20, 168);
-text-align: center;
-} */
-
-.collapsible {
-    background-color: pink;
-    color: white;
-    cursor: pointer;
-    padding: 25px;
-    width: 80%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 20px;
-  }
-
-.main-content{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    padding: 5% 0;
-    /*display:block; 
-    overflow:auto;*/
-}
-
-.main{
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 3%;
-    /*margin: 70px;*/
-    text-align: center;
-    color: black;
-}
-
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-  }
-  .active, .collapsible:hover {
-    background-color: rgb(252, 212, 218);
-  }
-
-  .contactForm{
-    padding: 50px 0;
-    position: relative;
-    z-index: 1;  
-}
-
-.item input[type="text"]{
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 15px;
-    height: 1px;
-    width: 30%;
-    color: #000000;
-}
-
-.item input[type="password"]{
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 15px;
-    height: 1px;
-    width: 30%;
-    color: #000000;
-}
-
-.item input[type="email"]{
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 15px;
-    height: 1px;
-    width: 30%;
-    color: #000000;
-}
-
-.item textarea{
-    border-radius: 10px;
-    height: 100px;
-    padding: 15px;
-    width: 30%;
-    color: #000000;
-}
-
-.item button{
-    height: 30px;
-    width: 15%;
-    margin-top: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-  }
-
-
-.o-nama .text-wrappper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.galerija img {
-    margin-bottom: 24px;
-}
-
-.kontakt-tekst {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.kontakt-lista {
-    list-style-type: square;
-}
-
-@media(max-width:768px){
-    .container{
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .rowPonuda1{
-        display: flex;
-        flex-direction: column;
-    }
-    .rowPonuda2{
-        display: flex;
-        flex-direction: column;
-    }
-    .rowONama{
-        display: flex;
-        flex-direction: column;
-    }
-    .galerija{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
-
- 
-
-/* .nav{
-    height: 75px;
-    background-color: #1b1f23;
-    position: sticky;
-    top: 0;
-}
-
-.nav ul{
-    list-style-type: none;
-    float: right;
-}
-
-.nav ul li{
-    float: left;
-    padding: 0 30px;
-}
-
-.nav ul li a{
-    color: #919497;
-    line-height: 65px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.nav .logo img{
-    margin-left: 10px;
-    width: 80px;
-    height: 75px;
-} */
-
-/* .nav{
-    height: 110px;
-    background-color: #1b1f23;
-    position: sticky;
-    top: 0;
-}
-
-.nav .logo{
-    float: left;
-    width: 10%;
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    line-height: 65px;
-}
-
-.nav ul{
-    float: right;
-    padding: 0 20px;
-}
-
-.nav ul li{
-    color: #919497;
-    line-height: 65px;
-    text-decoration: none;
-    font-size: 14px;
-} */
-
-/* .nav{
-    height: 75px;
-    background-color: #1b1f23;
-    position: sticky;
-    top: 0;
-}
-
-.nav .logo{
-    display: block;
-    max-height: fit-content;
-    max-width: 50vh;
-    margin: auto;
-    float: left;
-    /* width: -10%;
-    height: 10px;
-} */
-
-/* .nav .logo img{
-    width: 80px;
-    height: 75px;
-}
-
-.nav ul{
-    list-style-type: none;
-    float: left;
-}
-
-ul li{
-    float: right;
-    text-decoration: none;
-    text-decoration-style: none;
-    color: aqua;
-    margin: 25px 35px;
-    font-size: 16px;
-}
-
-ul li a:hover{
-    color: green;
-}  */
-
-/* #slider {
-    overflow: hidden;
-}
-
-#slider figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-
-#slider figure img{
-    width: 20%;
-    float: left;
-}
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
-} */
-
-/* #slider{
-    overflow: hidden;
-} 
-
-#slider figure{
-    position: relative;
-    width: 600%;
-    margin: 0;
-    left: 0;
-} */
 }
