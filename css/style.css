@@ -153,12 +153,6 @@ img:hover{
  background-color: #cce6ff;
 }
 
-/* @media screen and (max-width: 991px) {
- .h2{
-  font-size:10px;
-  }
-  } */
-
 @media (max-width: 952px){
   label.logo{
       font-size: 30px;
