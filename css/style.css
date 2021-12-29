@@ -6,7 +6,7 @@
 
 body{
   font-family: sans-serif;
-  width: 100%;
+  /* width: 100%; */
 }
 
 nav{
@@ -142,15 +142,15 @@ a .active, a:hover{
 }
 
 .single-img{
- padding: 20px 30px 20px 40px;
+ padding: 20px 20px 20px 40px;
 }
 
 img:hover{
  opacity: .5;
  transition: .9s;
- border: 2px solid black;
+ /* border: 2px solid black;
  border-radius: 5px;
- background-color: #cce6ff;
+ background-color: #cce6ff; */
 }
 
 /* @media screen and (max-width: 991px) {
@@ -206,6 +206,6 @@ img:hover{
     font-size: 11px;
   }
   .wrapper h2{
-    font-size: 20px;
+    font-size: 15px;
   }
 }
